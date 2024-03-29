@@ -8,7 +8,7 @@
 
 Store, share, and visualize front-end code. TrixEx allows developers to exchange front-end components. 
 
-Sign into the newly redesigned <a href="http://3.133.92.255/TrixEx.com" target="_blank">TrixEx2.o</a> with a demo account for full access to the site in a single click.
+This application has been redesigned using the Pythong Django stack. Sign into the newly redesigned <a href="http://3.133.92.255/TrixEx.com" target="_blank">TrixEx2.o</a> with a demo account for full access to the site in a single click.
 
 ## Build Stack
 
