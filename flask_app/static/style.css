@@ -1,0 +1,1579 @@
+* {
+    /* background-color: black; */
+    /* background-color: #0E0E13; */
+    /* border: 1px solid black; */
+    /* border: 1px solid white; */
+    margin: 0;
+    padding: 0;
+    /* All white text */
+    color: rgb(212, 212, 212);
+}
+
+/*################# COLORS #################*/
+/* #B0F8CD Green */
+/* #d0fbe1 Light Green */
+/* #262626 Grey */
+/* #313131 Light Grey */
+/* #0E0E13 Dark Blue */
+/* rgb(236, 236, 236) Text White */
+/* rgb(255, 171, 152) HTML Text */
+/* rgb(183, 251, 240) CSS Text */
+/* rgb(231, 231, 171) JS Text */
+
+body {
+    background-color: #0E0E13;
+    font-size: 14px;
+    /* transform: scale(.1); */
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+
+/*################# INDEX.html #################*/
+/* Socials Links */
+#socials-link {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 4vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vertical-line {
+    border-right: 1px solid #B0F8CD;
+    height: 10%;
+    width: 50%;
+    align-self: flex-start;
+}
+
+#socials-link img {
+    height: 2vw;
+    width: 2vw;
+}
+
+#socials-link a {
+    color: #B0F8CD;
+    font-size: 8px;
+    text-decoration: none;
+    text-align: center;
+    margin: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+#socials-link a:hover {
+    color: #d0fbe1;
+}
+
+#socials-link .email-link {
+    margin: 0;
+    transform: rotate(-90deg);
+    margin: 60px;
+    font-size: 10px;
+}
+
+#socials-link .favorites-btn {
+    margin-top: auto;
+    font-size: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#socials-link .favorites-btn img {
+    width: 3vw;
+    height: 3vw;
+}
+
+#favorited {
+    font-size: 14px;
+}
+
+/* HEADER */
+/* Nav Bar */
+#nav {
+    height: 80px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 8px 32px 0 #B0F8CD20;
+    padding-left: 4vw;
+    padding-right: 2vw;
+}
+
+#nav .nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#nav .title {
+    position: absolute;
+    left: calc(4vw + 39%);
+
+}
+
+#nav .title h1,
+#nav .title p {
+    margin: 0;
+    margin-top: -5px;
+    margin-left: auto;
+}
+
+#nav .signup {
+    margin: 20px;
+}
+
+.logout {
+    /* margin-right: 2vw; */
+    margin-left: 20px;
+}
+
+#nav .profile-btn {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #B0F8CD;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav .username {
+    margin-left: 10px;
+}
+
+#nav .profile-btn img {
+    width: 30px;
+    height: 30px;
+}
+
+
+/* MAIN */
+main {
+    /* for keeping footer at bottom */
+    flex: 1;
+    margin-left: 4vw;
+    margin-right: 2vw;
+}
+
+
+/* Search Bar */
+#search {
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar {
+    width: 350px;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #262626;
+}
+
+.search-bar input {
+    height: 100%;
+    width: 250px;
+    margin-left: 20px;
+    background-color: #262626;
+    color: white;
+    border: none;
+}
+
+.search-bar input:focus {
+    outline: none;
+}
+
+.search-bar img {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.create-link {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Trick Row*/
+.trick-body {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Card */
+.trick-body .card {
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 400px;
+    height: 321px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.trick-body .card-top {
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+.trick-body .card .title {
+    height: 100%;
+    text-decoration: none;
+
+}
+
+.trick-body .card-top img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.trick-body .card .screen {
+    height: 70%;
+    background-color: black;
+}
+
+.trick-body .card-bottom {
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trick-body .card-bottom p {
+    margin: 0;
+}
+
+.trick-body .card-bottom-left {
+    display: flex;
+    height: 50px;
+    margin-left: 10px;
+    align-items: center;
+}
+
+.trick-body .card-bottom-left .profile-pic {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #262626;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.trick-body .card-bottom-left img {
+    width: 25px;
+    height: 25px;
+}
+
+.trick-body .card-bottom-left .flex-space-between {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.trick-body .card-bottom-left .username {
+    font-size: 12px;
+}
+
+.trick-body .card-bottom-left .name {
+    color: rgb(236, 236, 236);
+    text-decoration: none;
+}
+
+.trick-body .card-bottom-right {
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 10px;
+    font-size: 11px;
+}
+
+.trick-body .card-bottom-right .date {
+    text-align: right;
+}
+
+.trick-body .card-bottom-right img {
+    width: 15px;
+    height: 15px;
+}
+
+.trick-body .card-bottom-right .views {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.trick-body .card-bottom-right>.views>p {
+    margin-right: 5px;
+    text-align: right;
+}
+
+/* Footer */
+.footer {
+    flex-shrink: 0;
+    background-color: black;
+    height: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 5px;
+    box-shadow: 0 8px 32px 0 #B0F8CD20;
+}
+
+.footer h5,
+.footer p {
+    margin: 0;
+    padding: 0;
+    margin-left: 4vw;
+}
+
+.footer p {
+    font-size: 12px;
+}
+
+.footer .move-up {
+    margin-bottom: 10px;
+}
+
+.footer a {
+    color: white;
+}
+
+/*############### ADD_TRICK.html ############### */
+.add-trick {
+    flex: 1;
+    margin-left: 1vw;
+    margin-right: 2vw;
+
+}
+
+.add-trick .title {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.add-trick .content-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.add-trick .screen {
+    width: 400PX;
+    height: 225px;
+    background-color: black;
+}
+
+.content-row .html,
+.content-row .css,
+.content-row .js {
+    width: 21%;
+}
+
+.content-row textarea {
+    height: 260px;
+    width: 100%;
+    background-color: #262626;
+    border: none;
+    padding: 5px;
+    resize: none;
+}
+
+.content-row textarea:focus {
+    background-color: #313131;
+    outline: none;
+    border: none;
+}
+
+.content-row .scale {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.content-row .scale-input {
+    background-color: #262626;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    width: 50px;
+    font-size: 18px;
+    margin-left: 10px;
+    padding: 0px 2px;
+    height: 25px;
+    border: none;
+}
+
+.html-label {
+    color: rgb(255, 171, 152);
+    margin-top: -5px;
+}
+
+.css-label {
+    color: rgb(183, 251, 240);
+    margin-top: -5px;
+}
+
+.js-label {
+    color: rgb(231, 231, 171);
+    margin-top: -5px;
+}
+
+.add-trick .inputs {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.add-trick .inputs .left {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#trickNameInput,
+#trickDescriptionInput {
+    background-color: #262626;
+    width: 100%;
+    background-color: #262626;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+#trickNameInput {
+    height: 30px;
+}
+
+#trickNameInput:focus {
+    background-color: #313131;
+    outline: none;
+}
+
+.add-trick .inputs .left p {
+    margin: 0;
+    margin-top: -9px;
+}
+
+#trickDescriptionInput {
+    height: 100px;
+    width: 60%;
+    background-color: #262626;
+    border: none;
+    padding: 5px;
+    resize: none;
+    border-radius: 5px;
+    overflow-y: hidden;
+}
+
+#trickDescriptionInput:focus {
+    background-color: #313131;
+    outline: none;
+}
+
+.add-trick .name,
+.add-trick .description {
+    text-align: right;
+}
+
+.add-trick .buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-trick input[type="radio"] {
+    display: none;
+}
+
+.add-trick .privacy label {
+    /* background-color: black; */
+    border: none;
+    box-shadow: none;
+}
+
+.add-trick input[type="radio"]:checked+label {
+    color: #B0F8CD;
+    border: 1px solid #B0F8CD;
+    border-radius: 5px;
+    background-color: #262626;
+    text-decoration: none;
+}
+
+
+/*############# SIGNUP.html ################# */
+#signup {
+    flex: 1;
+    margin-left: 4vw;
+    margin-right: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#signup .card {
+    width: 400px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+
+#signup .title {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#signup p {
+    text-align: center;
+}
+
+#signup input {
+    height: 30px;
+    background-color: #262626;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+#signup input:focus {
+    background-color: #313131;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#signup .mk-box-btn {
+    border: 1px solid #B0F8CD;
+}
+
+/*############# LOGIN.html ################# */
+#login {
+    flex: 1;
+    margin-left: 4vw;
+    margin-right: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#login .card {
+    width: 400px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+
+#login .title {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#login p {
+    text-align: center;
+}
+
+#login input {
+    height: 30px;
+    background-color: #262626;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+#login input:focus {
+    background-color: #313131;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#login .mk-box-btn {
+    border: 1px solid #B0F8CD;
+}
+
+/*############# FAVORITES.html ################# */
+.favorites-title {
+    font-size: 20px;
+    margin-left: 4vw;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+/*############# EDIT_TRICK.html ################# */
+.add-trick .delete {
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+
+}
+
+.add-trick .delete-btn {
+    border-color: red;
+    color: red;
+    margin: 20px 0px;
+}
+
+.add-trick .delete-btn:hover {
+    /* background-color: red; */
+    color: red;
+    border-color: red;
+    box-shadow: 0px 0px 1200px 50px red;
+
+}
+
+/*############# PROFILE.html ################# */
+.profile-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 2vw 20px 4vw;
+}
+
+.profile-section .left {
+    display: flex;
+}
+
+.profile-section .user-profile a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-section .profile-pic {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #262626;
+}
+
+.profile-section img {
+    width: 60px;
+    height: 60px;
+}
+
+.profile-section .mk-green {
+    font-size: 16px;
+}
+
+.profile-section .name {
+    font-size: 18px;
+}
+
+.profile-section .followers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+}
+
+.profile-section .followers .mk-box-btn {
+    margin-top: 30px;
+}
+
+.profile-section .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.profile-section .buttons a {
+    margin-top: 5px;
+}
+
+/*############# FOLLOWERS.html ################# */
+.self-profile .profile-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 4vw;
+}
+
+.self-profile .profile-row .user-profile a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.self-profile .profile-row .profile-pic {
+    border: 2px solid#262626;
+}
+
+.self-profile .profile-row .profile-pic img {
+    width: 30px;
+    height: 30px;
+}
+
+.self-profile .profile-row .mk-btn {
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.self-profile .profile-row .name {
+    font-size: 14px;
+}
+
+/*############# VIEW_TRICK.html ################# */
+.view-trick {
+    margin-left: 10vw;
+    margin-right: 8vw;
+}
+
+.view-trick hr {
+    margin: 0;
+    color: #777777;
+}
+
+.view-trick .trick-title {
+    font-size: 18px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.view-trick .trick-title img {
+    width: 25px;
+    height: 25px;
+}
+
+.view-trick .trick-title .name {
+    margin-left: 10px;
+}
+
+.view-trick .screen-and-scale {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.view-trick .screen {
+    margin-top: 10px;
+    width: 64vw;
+    height: 36vw;
+    background-color: black;
+    border: 1px solid #313131;
+    border-bottom: 2px solid #313131;
+}
+
+.view-trick .scale {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.view-trick .scale-input {
+    background-color: #262626;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    width: 50px;
+    font-size: 18px;
+    margin-left: 10px;
+    padding: 0px 2px;
+    height: 25px;
+}
+
+.view-trick .content-row {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.view-trick .content-row .html,
+.view-trick .content-row .css,
+.view-trick .content-row .js {
+    width: 32%;
+}
+
+.view-trick .content-row p {
+    font-size: 18px;
+}
+
+.view-trick .content-row textarea {
+    height: 350px;
+    padding-left: 10px;
+}
+
+.view-trick .creator-and-description {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.view-trick .creator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.view-trick .user-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.view-trick .user-profile .mk-btn {
+    margin-top: 5px;
+}
+
+.view-trick .profile-pic {
+    height: 70px;
+    width: 70px;
+}
+
+.view-trick .profile-pic img {
+    height: 40px;
+    width: 40px;
+}
+
+.view-trick .description {
+    width: 70%;
+}
+
+/* Comments */
+
+.comments-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0px 50px 0px;
+}
+
+.comments-area {
+    width: 375px;
+}
+
+.make-comment {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.make-comment> :nth-child(1) {
+    background-color: #262626;
+    height: auto;
+    border: none;
+    color: rgb(236, 236, 236);
+    width: 375px;
+    padding: 10px 25px 5px 25px;
+    border-radius: 5px;
+    resize: none;
+    height: 40px;
+}
+
+.make-comment> :nth-child(1):focus {
+    background-color: #313131;
+    border: none;
+    outline: none;
+}
+
+.make-comment> :nth-child(2) {
+    display: flex;
+    justify-content: end;
+    /* background-color: white; */
+    width: 100%;
+}
+
+.make-comment> :nth-child(2)>input {
+    background-color: #0E0E13;
+    border: none;
+    /* height: 30px; */
+    width: 60px;
+    font-size: 12px;
+    margin: 0;
+}
+
+.make-comment .vert-line {
+    /* width: 349px; */
+    width: 25px;
+    height: 20px;
+    border-right: 1px solid white;
+    margin-top: 15px;
+}
+
+.comment {
+    /* border: 1px solid white; */
+    /* height: auto; */
+    display: flex;
+    font-size: 12px;
+}
+
+.comment .top-vert-line {
+    height: 40px;
+    width: 25px;
+    border-right: 1px solid white;
+}
+
+.comments-body .profile-pic {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border: 1px solid #B0F8CD;
+}
+
+.comments-body .profile-pic img {
+    width: 30px;
+    height: 30px;
+}
+
+.comment> :nth-child(2) {
+    margin-top: 40px;
+    width: 310px;
+}
+
+.comment> :nth-child(2)> :nth-child(3) {
+    display: flex;
+    font-size: 10px;
+}
+
+.comments-body .date {
+    margin-right: 10px;
+}
+
+.comment .vert-line {
+    border-right: 1px solid white;
+    width: 25px;
+    height: calc(100% - 70px);
+}
+
+#reply {
+    /* Hidden until reply is clicked */
+    display: none;
+}
+
+.comment .mk-green {
+    cursor: pointer;
+}
+
+.hide form> :nth-child(1) {
+    background-color: #262626;
+    border: none;
+    border-radius: 3px;
+    width: 200px;
+    height: 25px;
+    padding-left: 5px;
+    margin-top: 5px;
+}
+
+.hide form> :nth-child(1):focus {
+    background-color: #313131;
+    outline: none;
+}
+
+.hide form> :nth-child(2) {
+    background-color: #0E0E13;
+    border: none;
+}
+
+.reply {
+    /* border: 1px solid white; */
+    height: auto;
+    display: flex;
+    font-size: 12px;
+}
+
+.reply .vert-line-left {
+    height: clac(100%);
+    width: 25px;
+    border-right: 1px solid white;
+}
+
+.reply .vert-line-right {
+    width: 35px;
+    height: 40px;
+    border-right: 1px solid white;
+}
+
+.reply .horz-line {
+    margin-left: 35px;
+    border-top: 1px solid white;
+    width: 25px;
+}
+
+.reply> :nth-child(4) {
+    width: 220px;
+    margin-top: 15px;
+}
+
+.reply> :nth-child(4)> :nth-child(3) {
+    display: flex;
+    font-size: 10px;
+}
+
+.reply .profile-pic {
+    margin-top: 15px;
+}
+
+.comment .delete,
+.reply .delete {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/*############# SEARCH.HTML ################# */
+.search .profile-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.search .user-profile a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.search .profile-pic img {
+    width: 30px;
+    height: 30px;
+}
+
+.search .none-msg {
+    margin-left: 4vw;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+/*############# USERS.html ################# */
+.users {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.users a {
+    text-decoration: none;
+    color: #B0F8CD;
+}
+
+table,
+tr,
+th,
+td {
+    border: 1px solid white;
+}
+
+th,
+td {
+    padding: 1px 10px;
+}
+
+.users .center {
+    text-align: center;
+}
+
+
+
+
+/*############# GLOBAL ################# */
+.hide {
+    display: none;
+}
+
+p {
+    margin: 0;
+}
+
+#validation_msgs {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+/* Page Break */
+.break-line {
+    background-color: #0E0E13;
+}
+
+.break-line hr {
+    margin: 0;
+    margin-left: 4vw;
+    margin-right: 2vw;
+    border: none;
+    border-top: 1px solid #777777;
+    background-color: #0E0E13;
+    ;
+}
+
+/* mk-keys */
+.mk-box-btn {
+    color: #B0F8CD;
+    border: 1px solid #B0F8CD;
+    padding: 5px 12px;
+    border-radius: 5px;
+    background-color: #262626;
+    text-decoration: none;
+}
+
+.mk-sm-box-btn {
+    color: #B0F8CD;
+    border: 1px solid #B0F8CD;
+    padding: 5px 7px;
+    border-radius: 5px;
+    background-color: #262626;
+    text-decoration: none;
+}
+
+.mk-btn {
+    color: #B0F8CD;
+    text-decoration: none;
+}
+
+.mk-green {
+    color: #B0F8CD;
+}
+
+.mk-dots {
+    background-image: radial-gradient(#B0F8CD20 1px,
+            transparent 1px);
+    background-position: 50% 50%;
+    background-size: 20px 20px;
+}
+
+.mk-light-dots {
+    background-image: radial-gradient(#B0F8CD09 1px,
+            transparent 1px);
+    background-position: 50% 50%;
+    background-size: 1rem 1rem;
+}
+
+.mk-glow {
+    box-shadow: 0 8px 32px 0 #B0F8CD20;
+}
+
+/* Hover */
+.mk-box-btn:hover {
+    color: #d0fbe1;
+    border: 1px solid #d0fbe1;
+    box-shadow: 0 8px 32px 0 #B0F8CD20;
+}
+
+.mk-btn:hover {
+    color: #d0fbe1;
+    text-decoration: none;
+}
+
+.trick-body .card:hover {
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 6px 64px 0 #B0F8CD20;
+}
+
+
+/* Star */
+.star {
+    width: 30px;
+    height: 30px;
+    transform: scale(.19);
+    cursor: pointer;
+}
+
+#star-filled {
+    /* margin-top: 50px; */
+    /* width: 500px; */
+    /* margin: 60px 20px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 50px;
+}
+
+#star-unfilled {
+    /* width: 200px; */
+    /* margin: 60px 20px; */
+    margin-top: -51px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 50px;
+    transform: scale(.8);
+}
+
+.star-filled {
+    position: relative;
+    border-bottom: 50px solid #B0F8CD;
+    border-right: 75px solid transparent;
+    border-left: 75px solid transparent;
+    transform: rotate(-37deg);
+}
+
+.star-filled::before {
+    content: "";
+    position: absolute;
+    left: -75px;
+    border-bottom: 50px solid #B0F8CD;
+    border-right: 75px solid transparent;
+    border-left: 75px solid transparent;
+    transform: rotate(-71.5deg);
+}
+
+.star-filled::after {
+    content: "";
+    position: absolute;
+    left: -75px;
+    border-bottom: 50px solid #B0F8CD;
+    border-right: 75px solid transparent;
+    border-left: 75px solid transparent;
+    transform: rotate(71.5deg);
+}
+
+.star-unfilled {
+    position: relative;
+    border-bottom: 50px solid black;
+    border-right: 75px solid transparent;
+    border-left: 75px solid transparent;
+    transform: rotate(-37deg);
+}
+
+.star-unfilled::before {
+    content: "";
+    position: absolute;
+    left: -75px;
+    border-bottom: 50px solid black;
+    border-right: 75px solid transparent;
+    border-left: 75px solid transparent;
+    transform: rotate(-71.5deg);
+}
+
+.star-unfilled::after {
+    content: "";
+    position: absolute;
+    left: -75px;
+    border-bottom: 50px solid black;
+    border-right: 75px solid transparent;
+    border-left: 75px solid transparent;
+    transform: rotate(71.5deg);
+}
+
+/* #################### MOBILE ####################*/
+#mobile {
+    display: none;
+}
+
+/* is device 'viewport width' under max-width */
+@media screen and (max-width: 600px) {
+    #mobile {
+        display: contents;
+        background-color: black;
+
+    }
+
+    #socials-link {
+        display: none;
+    }
+
+    #nav {
+        display: none;
+    }
+
+    /* hamburger-menu */
+    #mobile .profile-pic img{
+        width: 30px;
+        height: 30px;
+    }
+    #mobile .menu a{
+        padding: 10px 20px;
+    }
+
+    .hamburger-menu {
+        box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+        /* position: fixed; */
+        width: 100%;
+        z-index: 3;
+        background-color: black;
+    }
+
+    .hamburger-menu ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        overflow: hidden;
+    }
+
+    .hamburger-menu li a {
+        display: block;
+        padding: 20px 20px;
+        text-decoration: none;
+        color: #B0F8CD;
+
+    }
+
+    .hamburger-menu li a:hover,
+    .hamburger-menu .menu-btn:hover {
+        background-color: #313131;
+    }
+
+    .hamburger-menu .hamburger-title {
+        display: block;
+        float: left;
+        font-size: 2em;
+        padding-left: 20px;
+        text-decoration: none;
+    }
+    .hamburger-menu .hamburger-title h1{
+        color: #B0F8CD;
+    }
+    .hamburger-menu .hamburger-title p {
+        font-size: 12px;
+        color: rgb(236, 236, 236);
+        margin: -10px 0px 10px 0px;
+    }
+
+    /* menu */
+
+    .hamburger-menu .menu {
+        clear: both;
+        max-height: 0;
+        transition: max-height .2s ease-out;
+        background-color: black;
+    }
+
+    /* menu icon */
+
+    .hamburger-menu .menu-icon {
+        cursor: pointer;
+        display: inline-block;
+        float: right;
+        padding: 28px 20px;
+        position: relative;
+        user-select: none;
+    }
+
+    .hamburger-menu .menu-icon .navicon {
+        background: #B0F8CD;
+        display: block;
+        height: 2px;
+        position: relative;
+        transition: background .2s ease-out;
+        width: 18px;
+    }
+
+    .hamburger-menu .menu-icon .navicon:before,
+    .hamburger-menu .menu-icon .navicon:after {
+        background: #B0F8CD;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+    }
+
+    .hamburger-menu .menu-icon .navicon:before {
+        top: 5px;
+    }
+
+    .hamburger-menu .menu-icon .navicon:after {
+        top: -5px;
+    }
+
+    /* menu btn */
+
+    .hamburger-menu .menu-btn {
+        display: none;
+    }
+
+    .hamburger-menu .menu-btn:checked~.menu {
+        max-height: 320px;
+    }
+
+    .hamburger-menu .menu-btn:checked~.menu-icon .navicon {
+        background: transparent;
+    }
+
+    .hamburger-menu .menu-btn:checked~.menu-icon .navicon:before {
+        transform: rotate(-45deg);
+    }
+
+    .hamburger-menu .menu-btn:checked~.menu-icon .navicon:after {
+        transform: rotate(45deg);
+    }
+
+    .hamburger-menu .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
+    .hamburger-menu .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
+        top: 0;
+    }
+
+    /* index.html */
+
+    .search-bar {
+        width: 300px;
+        margin-left: 0;
+    }
+
+    .search-bar input {
+        width: 200px;
+    }
+
+    main {
+        margin: 0;
+    }
+
+    .trick-body .card {
+        width: 100vw;
+        margin: 0;
+        margin-bottom: 2px;
+        border-bottom: 1px solid #262626;
+        border-radius: 0px;
+    }
+
+    .footer .title {
+        font-size: 11px;
+    }
+
+    .footer p {
+        font-size: 8px;
+        text-align: center;
+    }
+
+    /* login.html */
+    #login .card {
+        width: 85vw;
+        margin-top: 10px;
+
+    }
+
+    /* login.html */
+    #signup .card {
+        width: 85vw;
+        margin-top: 10px;
+    }
+
+    /* view_trick.html */
+    .view-trick{
+        margin: 0;
+    }
+    .view-trick .screen{
+        width: 100vw;
+        height: 56.25vw;
+    }
+    .view-trick .content-row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .view-trick .content-row .html,
+    .view-trick .content-row .css,
+    .view-trick .content-row .js{
+        margin-top: 30px;
+        width: 80vw;
+        margin-left: -30px;
+    }
+    .view-trick .creator-and-description{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .view-trick .creator-and-description .user-profile p{
+        text-align: center;
+    }
+    .view-trick .creator{
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .view-trick .description{
+        width: 85vw;
+    }
+    .view-trick .comments-body{
+        margin: 0;
+    }
+    .view-trick .comments-area{
+        transform: scale(.85);
+        width: 375px;
+    }
+    /* .view-trick .reply{
+        margin-left: -20px;
+    } */
+
+    /* profile.html */
+    .self-profile .user-profile p{
+        text-align: center;
+    }
+    .self-profile .buttons{
+        display: none;
+    }
+
+    /* edit_trick.html */
+    .add-trick .content-row{
+        display: flex;
+        flex-direction: column;
+    }
+    .add-trick .screen{
+        width: 100vw;
+        height: 56.25vw;
+    }
+    .add-trick .content-row .html,
+    .add-trick .content-row .css,
+    .add-trick .content-row .js{
+        width: 60vw;
+        margin-top: 30px;
+        margin-left: 8vw;
+    }
+    .add-trick .inputs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .add-trick .inputs .left{
+        width: 90vw;
+        height: 100px;
+    }
+    .add-trick #trickDescriptionInput{
+        width: 90vw;
+        margin-top: 10px;
+    }
+    .add-trick .description{
+        width: 90vw;
+    }
+}
